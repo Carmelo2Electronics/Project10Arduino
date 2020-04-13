@@ -25,25 +25,25 @@ void loop() {
       Serial.print("LED0 OFF\n");             //Send to java 9 characters. \n is an escape sequence, counts as a character
     }
     
-    else if(inputString=="Led_0__ON"){
+    if(inputString=="Led_0__ON"){
       digitalWrite(2, HIGH);
       Serial.print("LED0  ON\n");
     }
 
-    else if(inputString=="Led_1_OFF"){
+    if(inputString=="Led_1_OFF"){
       digitalWrite(3, LOW);
       Serial.print("LED1 OFF\n");
     }
-    else if(inputString=="Led_1__ON"){
+    if(inputString=="Led_1__ON"){
       digitalWrite(3, HIGH);
       Serial.print("LED1  ON\n");
     }
 
-    else if(inputString=="Led_2_OFF"){
+    if(inputString=="Led_2_OFF"){
       digitalWrite(4, LOW);
       Serial.print("LED2 OFF\n");
     }
-    else if(inputString=="Led_2__ON"){
+    if(inputString=="Led_2__ON"){
       digitalWrite(4, HIGH);
       Serial.print("LED2  ON\n");
     }
